@@ -24,7 +24,6 @@ function esriplugin(Gmap,Etoken,callback){
       fillOpacity: 0.35,
       zIndex:1
   }
-  //Gmap.EsriVar.esritoken = "M1ZTMy3n205PZRNb10qP8BfRx1u9SI-OYO9fv2k5X-mULQbjK4GGngVWqLkjg74pxg_AIrkwpN0NnGLL1Cdmi7FEQAO3XP5PhFaet-eCWWDjnRZDqWA_FQVEAbLwek39aOMlx6aDa59dcdGpovvR9DQCX_PKiI2a_KIsTDQh_adyvi3NhIWt-ZI9VHeqSREBtR43ecFNewmKHnHDYw4fCjwqwQV7c7TFeZNUvsiEEBE."
   Gmap.EsriVar.esritoken = Etoken;
   Gmap.EsriVar.identifylayers = new Array();
   if(typeof(Gmap.getZoom)=='function'){
