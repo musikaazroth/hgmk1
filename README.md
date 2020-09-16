@@ -1,2 +1,2 @@
 # hgmk1
-Hell Gate Mark One
+Hell Gate Mark 1.0
