@@ -907,3 +907,35 @@ function cekodd(val){
   }
   return returnVal;
 }
+function trnodata(obj){
+  var defobj = {
+	col:1,
+	row:1,
+	str:"No Data"
+  }
+  $.each(defobj,function(k,v){
+	  if(typeof(obj[k])=='undefined'){
+		  obj[k] = defobj[k]
+	  }
+  })
+  var col = obj.col
+  var row = obj.row
+  var str = obj.str
+  return '<tr><td class="ma-ta-c" colspan="'+col+'" rowspan="'+row+'">'+str+'</td></tr>'
+}
+function trloaddata(obj){
+	var defobj = {
+	col:1,
+	row:1,
+	str:'<i class="fas fa-spin fa-spinner"></i>'
+  }
+  $.each(defobj,function(k,v){
+	  if(typeof(obj[k])=='undefined'){
+		  obj[k] = defobj[k]
+	  }
+  })
+  var col = obj.col
+  var row = obj.row
+  var str = obj.str
+  return '<tr><td class="ma-ta-c" colspan="'+col+'" rowspan="'+row+'">'+str+'</td></tr>'
+}
