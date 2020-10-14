@@ -26,10 +26,7 @@ function parseForm(elem=null){
   })
   $('#'+elem[0].id+' input[type=file]').each(function(k,v){
     if($(v).prop('files').length>0){
-      var exclarrS = $(v).attr('excl').split(",")
-      var exclarr = exclarrS.map(x=>parseInt(x))
       $.each($(v).prop('files'),function(ky,vl){
-        console.log('[dt-type=upload][dt-img='+ky']',$('[dt-type=upload][dt-img='+ky']'))
         if($('[dt-type=upload][dt-img='+ky']').length>0){
           result[$(v).attr('name')+'_'+ky]=$(v).prop('files')[ky]
         }
