@@ -29,7 +29,7 @@ function parseForm(elem=null){
       var exclarrS = $(v).attr('excl').split(",")
       var exclarr = exclarrS.map(x=>parseInt(x))
       $.each($(v).prop('files'),function(ky,vl){
-        if($.inArray(parseInt($('.galleryimg:first-of-type').attr('dt-img'))+(ky+1),exclarr)==-1){
+        if($('[dt-type=upload][dt-img='+ky']').length>0){
           result[$(v).attr('name')+'_'+ky]=$(v).prop('files')[ky]
         }
       })
