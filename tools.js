@@ -1,3 +1,4 @@
+function dummy(){}
 function ajaxform(url,parsedata,callback,method){
   if(arenull([url,parsedata,callback,method])){
     console.log('HELP#ajaxform(URL:String,FormData to be passed:FormData,Callback Function to be executed after completion:Function,Method of Ajax:["POST","GET"]:String)')
