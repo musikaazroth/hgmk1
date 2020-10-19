@@ -183,7 +183,7 @@ function makeCharts(elemID,data,options,callback=null){
                 var legenddata = [];
                 series.columns.each(function(column,index) {
                   legenddata.push({
-                    name: data[index]['alias'],
+                    name: (typeof(data[index]['alias'])!="undefined":data[index]['alias']?data[index]['grp']),
                     fill: column.fill
                   });
                 });
