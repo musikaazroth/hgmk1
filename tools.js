@@ -27,7 +27,7 @@ function parseForm(elem=null){
   $('#'+elem[0].id+' input[type=file]').each(function(k,v){
     if($(v).prop('files').length>0){
       $.each($(v).prop('files'),function(ky,vl){
-        if($('#'+elem[0].id+' [dt-type=upload][dt-img='+ky']').length>0){
+        if($('#'+elem[0].id+' [dt-type=upload][dt-img='+ky+']').length>0){
           result[$(v).attr('name')+'_'+ky]=$(v).prop('files')[ky]
         }
       })
