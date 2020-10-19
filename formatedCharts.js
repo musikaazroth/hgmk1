@@ -1,3 +1,4 @@
+console.log('aaaa')
 function makeCharts(elemID,data,options,callback=null){
   var sumData = 0;
   var avgData = 0;
